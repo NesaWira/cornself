@@ -6,7 +6,7 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
 cl = LINETCR.LINE()
-cl.loginQr(qr=True)
+cl.login(qr=True)
 #cl.login(token="")
 cl.loginResult()
 
@@ -17,8 +17,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpmsg ="""
-================================
-                    CORN SELFBOT
+
 ================================
 
 ➣Mid @ - Show MID by tag
@@ -41,9 +40,6 @@ helpmsg ="""
 ➣Gname [name] - change group name
 ➣Gift - send gift
 ➣Me - send contact myself
-
-=================================
-http://line.me/ti/p/~raghdahassa.p.c
 =================================
 """
 KAC=[cl,ki,kk,kc]
